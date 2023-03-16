@@ -169,6 +169,10 @@ Card
     font-size: 16px;
     line-height: 21px;
   }
+  .special-element-link {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 /* buttons */
 .order-card-btn {
