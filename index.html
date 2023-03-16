@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- fonts-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- normalize css -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
+  <main class="main">
+    <article class="order-card">
+      <div class="card-img-container">
+        <img class="card-img img" src="./images/illustration-hero.svg" alt="hero image">
+      </div>
+      <div class="order-info">
+        <h1 class="order-title">Order Summary</h1>
+        <p class="order-text">
+          You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!
+        </p>
+        <!-- special element -->
+        <div class="special-element">
+          <img src="./images/icon-music.svg" alt="music icon">
+          <div class="special-element-info">
+            <h2 class="special-element-title">Annual Plan</h2>
+            <p class="special-element-price">$59.99/year</p>
+          </div>
+          <a href="#" class="special-element-link">Change</a>
+        </div>
+        <!-- end of special element -->
+        <div class="order-card-btn-container">
+          <button class="order-card-btn">Proceed to Payment</button>
+          <button class="cancel-order-btn">Cancel Order</button>
+        </div>
+      </div>
 
-  Order Summary
+    </article>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  </main>
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
